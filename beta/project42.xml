@@ -1,0 +1,340 @@
+<allproject>
+	<project>
+		<name>Taskmaster</name>
+		<description>Refaire le système d.</description>
+		<descriptionEN>Redo the system d.</descriptionEN>
+		<date>1/2017</date>
+		<language>C++</language>
+		<tool>Vim Gcc Gdb Unix Linux Git</tool>
+	</project>
+	<project>
+		<name>Matt Daemon</name>
+		<description>Ce projet constitue une introduction au concept de daemon. 
+			Vous allez donc devoir coder un petit programme -un deamon- ayant pour fonction
+			de traiter et stocker les messages reçus sur un port spécifique, ouvert par ce daemon
+		justement.</description>
+		<descriptionEN>You will therefore have to code a small program - in daemon - having the function of processing and storing the messages received on a specific port, opened by this daemon precisely.</descriptionEN>
+		<date>12/2016</date>
+		<language>C++</language>
+		<tool>Vim Gcc Linux Unix Git</tool>
+	</project>
+	<project>
+		<name>Ft_traceroute</name>
+		<description>Refaire la commande traceroute ayant le même fonctionnement que celui du Système.</description>
+		<descriptionEN>Repeat the traceroute command with the same operation as the System.</descriptionEN>
+		<date>10/2016</date>
+		<language>C</language>
+		<tool>Vim Gcc Unix Linux Git</tool>
+	</project>
+	<project>
+		<name>Ft_ping</name>
+		<description>Refaire la commande ping ayant le même fonctionnement que celui du Système.</description>
+		<descriptionEN>Repeat the ping command with the same operation as the System.</descriptionEN>
+		<date>10/2016</date>
+		<language>C</language>
+		<tool>Vim Gcc Unix Linux Git</tool>
+	</project>
+	<project>
+		<name>Ft_script</name>
+		<description>Refaire la commande script ayant le même fonctionnement que celui du Système.</description>
+		<descriptionEN>Repeat the script command that has the same functionality as the System command.</descriptionEN>
+		<date>5/2016</date>
+		<language>C</language>
+		<tool>Vim Gcc MacOsX Git</tool>
+	</project>
+
+	<project>
+		<name>Root Me</name>
+		<description>projetRoot Me Project Hacking. http://www.root-me.org/</description>
+		<descriptionEN>projetRoot Me Project Hacking. http://www.root-me.org/</descriptionEN>
+		<date>4/2015</date>
+		<language>Hacking</language>
+		<tool>Gdb Vim Linux</tool>
+	</project>
+	<project>
+		<name>Abstract VM</name>
+		<description>AbstractVM est une machine qui utilise une pile pour calculer des expressions arithmétiques simples. 
+		Ces expressions arithmétiques sont fournies à la machine en tant que programmes d'assemblage de base.</description>
+		<descriptionEN>AbstractVM is a machine that uses a stack to calculate simple arithmetic expressions.
+		These arithmetic expressions are supplied to the machine as basic assembly programs.</descriptionEN>
+		<date>3/2015</date>
+		<language>C++</language>
+		<tool>Vim Gcc MacOsX Git</tool>
+	</project>
+	<project>
+		<name>Arkanoid</name>
+		<description>Refaire un casse brique en C avec interface graphique en OpenGl.</description>
+		<descriptionEN>Redo a brick case in C with OpenGl GUI.</descriptionEN>
+		<date>3/2015</date>
+		<language>C</language>
+		<tool>Vim Gcc MacOsX OpenGl Git</tool>
+	</project>
+	<project>
+		<name>2048</name>
+		<description>Refaire le 2048 en C avec un interface graphique en ncurses.</description>
+		<descriptionEN>Repeat the 2048 in C with a graphical interface in ncurses.</descriptionEN>
+		<date>2/2015</date>
+		<language>C</language>
+		<tool>Vim Gcc Ncurse MacOsX Git</tool>
+	</project>
+	<project>
+		<name>Libft ASM</name>
+		<description>Refaire la libft en Assembleur x64</description>
+		<descriptionEN>Redo the libft in x64 Assembler</descriptionEN>
+		<date>2/2015</date>
+		<language>ASM</language>
+		<tool>Vim Nasm Gdb MacOsX Git</tool>
+	</project>
+	<project>
+		<name>Piscine C++</name>
+		<description>Pour apprendre le langage C++ dans sont intégralité.</description>
+		<descriptionEN>To learn the C ++ language in is complete.</descriptionEN>
+		<date>1/2015</date>
+		<language>C++</language>
+		<tool>Vim Gcc MacOsX Algorithme STL Git</tool>
+	</project>
+	<project>
+		<name>Zappy</name>
+		<description>Jeux avec client, serveur et interface graphique en réseau. 
+			Le jeu consiste à gérer un monde et ses habitants. Ce monde, nommé Trantor est
+			géographiquement constitué de plaines ne comprenant aucun relief : ni cratère, ni vallée,
+			ni montagne. Le plateau de jeu représente la totalité de la surface de ce monde comme
+			un planisphère. Si un joueur sort par la droite du plateau, il rentrera par la gauche. 
+			Le jeu se joue par équipe. L’équipe gagnante est celle dont six joueurs auront atteint
+		l’élévation maximale.</description>
+		<descriptionEN>Games with client, server and networked GUI. 
+			The game consists of managing a world and its inhabitants. 
+			This world, named Trantor is geographically made up of plains not including any relief:
+			No crater, no valley, no mountain. 
+			The game board represents the entire surface of this world as a planisphere. 
+			If a player goes out on the right of the board, he will come in from the left. 
+			The game is played by team. 
+			The winning team is one whose six players have reached the maximum elevation.</descriptionEN>
+		<date>6/2014</date>
+		<language>C</language>
+		<tool>Vim Gcc MacOsX Unix Mlx Git</tool>
+	</project>
+	<project>
+		<name>IRC</name>
+		<description>Refaire un tchat IRC</description>
+		<descriptionEN>Redo an IRC tchat</descriptionEN>
+		<date>5/2014</date>
+		<language>C</language>
+		<tool>Vim Gcc MacOsX Unix Git</tool>
+	</project>
+	<project>
+		<name>Philosophers</name>
+		<description>Problème des philosophe avec utilisation des Thread, Mutex et interface graphique en Mlx.</description>
+		<descriptionEN>Problem of the philosopher with use of Thread, Mutex and GUI in Mlx.</descriptionEN>
+		<date>5/2014</date>
+		<language>C</language>
+		<tool>Vim Gcc MacOsX Unix Mlx Git</tool>
+	</project>
+	<project>
+		<name>Ft_p</name>
+		<description>Ce projet consiste à faire un client et un serveur FTP (File Transfert Protocol) qui
+			permettent d’envoyer et recevoir des fichiers entre un ou plusieurs clients et le serveur.</description>
+		<descriptionEN>This project involves making a client and an FTP server (File Transfer Protocol) that allows to send and receive files between one or more clients and the server.</descriptionEN>
+		<date>5/2014</date>
+		<language>C</language>
+		<tool>Vim Gcc MacOsX Unix Git</tool>
+	</project>
+	<project>
+		<name>Lem-ipc</name>
+		<description>Le projet a pour but de vous faire utiliser les communications inter-processus (IPC),
+			de vous faire comprendre la notion de mémoire partagée, les sémaphores. Tout en créant
+			un jeu !</description>
+		<descriptionEN>The project aims to make you use interprocess communication (IPC), to make you understand the notion of shared memory, the semaphores.</descriptionEN>
+		<date>5/2014</date>
+		<language>C</language>
+		<tool>Vim Gcc MacOsX Unix Ncurse Git</tool>
+	</project>
+	<project>
+		<name>Malloc</name>
+		<description>Refaire la fonction Système malloc ainsi que free et realloc.
+		Avec la fonction mmap pour Mac Osx.</description>
+		<descriptionEN>Repeat the malloc system function as well as free and realloc. With the mmap function for Mac Osx.</descriptionEN>
+		<date>5/2014</date>
+		<language>C</language>
+		<tool>Vim Gcc MacOsX Unix Git</tool>
+	</project>
+	<project>
+		<name>Nm et Otool</name>
+		<description>Refaire les fonction Système Nm et Otool.</description>
+		<descriptionEN>Repeat the System Nm and Otool functions.</descriptionEN>
+		<date>5/2014</date>
+		<language>C</language>
+		<tool>Vim Gcc MacOsX Unix Git</tool>
+	</project>
+	<project>
+		<name>Piscine PHP</name>
+		<description>Pour apprendre:
+			-html et css. 
+			-php et mysql. 
+			-javascript. 
+			-ajax et jquery.</description>
+		<descriptionEN>Learn:
+			-html et css. 
+			-php et mysql. 
+			-javascript. 
+			-ajax et jquery.</descriptionEN>
+		<date>3/2014</date>
+		<language>Html Css Php Sql Javascript</language>
+		<tool>Vim Mamp Bootstrap Git MySql</tool>
+	</project>
+	<project>
+		<name>Forty Two SH</name>
+		<description>Refaire un Shell complet.</description>
+		<descriptionEN>Make a complete Shell.</descriptionEN>
+		<date>3/2014</date>
+		<language>C</language>
+		<tool>Vim Gcc Gdb Unix MacOsX Termcaps Git</tool>
+	</project>
+	<project>
+		<name>Lemin</name>
+		<description>Le but du projet est de trouver le moyen le plus rapide de faire traverser la fourmilière
+			par n fourmis. 
+			Évidemment, il y a quelques contraintes. Pour arriver le premier, il faut prendre le
+			chemin le plus court (et pas forcément pour autant le plus simple), ne pas marcher
+			sur ses congénères, tout en évitant les embouteillages.</description>
+		<descriptionEN>The goal of the project is to find the fastest way to get through the nest by n ants. 
+			Obviously, there are some constraints. 
+			To arrive first, you have to take the shortest route (and not necessarily the simplest), not to walk on its congener, while avoiding traffic jams.</descriptionEN>
+		<date>3/2014</date>
+		<language>C</language>
+		<tool>Vim Gcc MacOsX Algorithme Git</tool>
+	</project>
+	<project>
+		<name>Minishell 3</name>
+		<description>Programmer un mini interpréteur de commandes UNIX et gestion des pipe et des flux de redirection. 
+		Et en plus mise en place des termcaps et gestion des touche clavier.</description>
+	<descriptionEN>Program a UNIX mini command interpreter and pipe management and redirection flows. And in addition set up termcaps and keyboard key management.</descriptionEN>
+		<date>3/2014</date>
+		<language>C</language>
+		<tool>Vim Gcc MacOsX Unix Termcaps Git</tool>
+	</project>
+	<project>
+		<name>Puissance 4</name>
+		<description>Refaire un puissance 4 avec une IA.</description>
+		<descriptionEN>Redo power 4 with an AI.</descriptionEN>
+		<date>3/2014</date>
+		<language>C</language>
+		<tool>Vim Gcc MacOsX Algorithme Git</tool>
+	</project>
+	<project>
+		<name>Filler</name>
+		<description>Créez votre joueur pour affronter d’autres étudiants sur le célèbre (ou pas) plateau
+			du Filler. Le principe est simple : deux joueurs s’affrontent sur un plateau, et doivent
+			placer, tour à tour, la pièce que le maître du jeu (fourni sous la forme d’un exécutable
+			Ruby) leur donne, gagnant ainsi des points. La partie s’arrête dès qu’une pièce ne peut
+			plus être placée. Petit projet ludique !</description>
+		<descriptionEN>Create your player to confront other students on the famous (or not) Filler tray. 
+			The principle is simple:
+			Two players compete against each other on a board, and must place, in turn, the coin that the master of the game (provided in the form of a Ruby executable) gives them, thus gaining points. 
+			The part stops as soon as a piece can no longer be placed. 
+			Small playful project!</descriptionEN>
+		<date>2/2014</date>
+		<language>C</language>
+		<tool>Vim Gcc MacOsX Algorithme Git</tool>
+	</project>
+	<project>
+		<name>Ft_select</name>
+		<description>ft_select est un programme utilisant la bibliothèque termcaps</description>
+		<descriptionEN>Ft_select is a program using the termcaps library</descriptionEN>
+		<date>2/2014</date>
+		<language>C</language>
+		<tool>Vim Gcc MacOsX Unix Termcaps Git</tool>
+	</project>
+	<project>
+		<name>Minishell 2</name>
+		<description>Programmer un mini interpréteur de commandes UNIX.
+		Avec en plus gestion des pipe et des flux de redirection.</description>
+		<descriptionEN>Program a UNIX shell. With additionally pipe management and redirection flow.</descriptionEN>
+		<date>2/2014</date>
+		<language>C</language>
+		<tool>Vim Gcc Unix MacOsX Git</tool>
+	</project>
+	<project>
+		<name>Push swap</name>
+		<description>Vous devez faire un programme qui prend en paramètre la pile a sous la forme
+			d’une liste de nombres. Le premier paramètre est au sommet de la pile (attention
+			donc à l’ordre). 
+			Le programme doit afficher la suite d’opérations qui permet de trier la pile, le plus
+			petit nombre étant au sommet. Les opérations seront affichées separées par un
+			espace, pas d’espace au debut ni à la fin, le tout suivi d’un ’\n’.
+			Le but est de trier la pile avec le moins d’opérations possibles.</description>
+		<descriptionEN>You must make a program that takes the stack a as a list of numbers. 
+			The first parameter is at the top of the stack (pay attention to the order). 
+			The program should display the sequence of operations that allows the stack to be sorted, with the smallest number at the top. 
+			The operations will be displayed separated by a space, no space at the beginning or at the end, followed by a '\ n'. The goal is to sort the stack with as few operations as possible.</descriptionEN>
+		<date>2/2014</date>
+		<language>C</language>
+		<tool>Vim Gcc MacOsX Algorithme Git</tool>
+	</project>
+	<project>
+		<name>Minishell 1</name>
+		<description>Programmer un mini interpréteur de commandes UNIX.</description>
+		<descriptionEN>Program a UNIX shell.</descriptionEN>
+		<date>1/2014</date>
+		<language>C</language>
+		<tool>Vim Gcc MacOsX Unix Git</tool>
+	</project>
+	<project>
+		<name>Hotrace</name>
+		<description>Programme Key Value le plus optimal possible comme les recherche Google.</description>
+		<descriptionEN>Program Key Value as optimal as Google search.</descriptionEN>
+		<date>1/2014</date>
+		<language>C</language>
+		<tool>Vim Gcc MacOsX Unix Git Algorithme</tool>
+	</project>
+	<project>
+		<name>Pipex</name>
+		<description>Premier abord des flux de redirection et les pipe.</description>
+		<descriptionEN>Initial flow of redirection and pipe.</descriptionEN>
+		<date>1/2014</date>
+		<language>C</language>
+		<tool>Vim Gcc Unix MacOsX Git</tool>
+	</project>
+	<project>
+		<name>Printf</name>
+		<description>Refaire la fonction Système printf.</description>
+		<descriptionEN>Repeat the System printf function.</descriptionEN>
+		<date>1/2014</date>
+		<language>C</language>
+		<tool>Vim Gcc Algorithme MacOsX Git</tool>
+	</project>
+	<project>
+		<name>Get_next_line</name>
+		<description>get_next_line est un Project qui a pour but de lire ligne par ligne le contenu d'un file descriptor. 
+			Un peut comme getline en C++. 
+			Chaque ligne est malloc et le buffer de read est predefini dans un define a une taille fixe.</description>
+		<descriptionEN>Get_next_line is a Project which aims to read the contents of a descriptor file line by line. One can like getline in C ++. Each line is malloc and the read buffer is predefined in a define has a fixed size.</descriptionEN>
+		<date>12/2013</date>
+		<language>C</language>
+		<tool>Vim MacOsX Algorithme Gcc Git</tool>
+	</project>
+	<project>
+		<name>Ls</name>
+		<description>Refaire la commande ls ayant le même fonctionnement que celui du Système.</description>
+		<descriptionEN>Repeat the ls command with the same operation as the System.</descriptionEN>
+		<date>12/2013</date>
+		<language>C</language>
+		<tool>Unix MacOsX Vim Gcc Git</tool>
+	</project>
+	<project>
+		<name>Libft</name>
+		<description>Création de notre premiere bibliothèque.Fonction Système libc.</description>
+		<descriptionEN>Creating our first library.Function System libc.</descriptionEN>
+		<date>11/2013</date>
+		<language>C</language>
+		<tool>Vim Gcc MacOsX Git</tool>
+	</project>
+	<project>
+		<name>Piscine C</name>
+		<description>Pour apprendre le langage C dans son intégralité.</description>
+		<descriptionEN>To learn the C language in its entirety.</descriptionEN>
+		<date>8/2013</date>
+		<language>C</language>
+		<tool>Vim Gcc MacOsX Algorithme Git</tool>
+	</project>
+</allproject>
