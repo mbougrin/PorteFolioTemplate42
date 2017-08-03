@@ -1,0 +1,91 @@
+<work>
+	<job>
+		<description>CDI Développeur C</description>
+		<descriptionEN>CDI Developer C</descriptionEN>
+		<date>6/2017 Aujourd'hui</date>
+		<entreprise>Apside</entreprise>
+		<info>Développeur C, Bug Fixe and Feature. 
+			Gcc, Gdb and Vim it is all my life. 
+			Sous Linux sous RedHat. 
+			Norme C99.</info>
+		<infoEN>Developer C, Bug Fixe and Feature. 
+			Gcc, Gdb and Vim it is all my life. 
+			On Linux under RedHat. 
+			Standard C99.</infoEN>
+		<language>C</language>
+		<tool>Vim Gcc Gdb Linux Svn</tool>
+	</job>
+	<job>
+		<description>CDI Développeur C++/Qt</description>
+		<descriptionEN>CDI Developer C ++/Qt</descriptionEN>
+		<date>4/2017 6/2017</date>
+		<entreprise>Agap2IT</entreprise>
+		<info>Mise en place des tests automatiser avec Jenkins. Création des test unitaire, régression et validation en C++ sous Visual Studio avec Qt comme interface. 
+			Création des tests IHM avec Squish QT. 
+			Création interface Web en Javascript et Nodejs pour compte rendu des tests automatiser. 
+			Parsing des fichier XML des test automatiser. 
+			Scripting bat sous Windows afin automatisation des test. 
+			Choix des outils et autonome sur toutes les taches. 
+			Ghost Os du serveur. 
+			Mise en place de tout les outils sur le serveur de production et test des outils sur les serveurs.</info>
+		<infoEN>Implementation of automated testing with Jenkins. 
+			Creation of unit tests, regression and validation in C ++ in Visual Studio with Qt as interface. 
+			Creation of HMI tests with Squish QT. 
+			Creation of Web interface in Javascript and Nodejs for automated test reports. 
+			Parsing XML files test automate. 
+			Scripting beats Windows to automate testing. 
+			Choice of tools and autonomous on all tasks. 
+			Ghost Bone of the server. 
+		Implementation of all the tools on the production server and testing of the tools on the servers.</infoEN>
+		<language>C++ Qt NodeJS Javascript</language>
+		<tool>Jenkins VisualStudio Windows Bootstrap Git Squish</tool>
+	</job>
+	<job>
+		<description>CDD Développeur C++/Qt</description>
+		<descriptionEN>CDD Developer C ++/Qt</descriptionEN>
+		<date>6/2015 6/2016</date>
+		<entreprise>Soldata</entreprise>
+		<info>Création de nouvelle feature, bug fixe, migration version de Qt 4-8-5 a 5-5. 
+			Api Server et client sous qt. 
+			Documentation, compilation de librarie. 
+			Gestion des pdb et génération de dump error. 
+			Ghost os windows et installation de poste. 
+			Support detection de new bug et correction. 
+			Réseau et choix des pc pour les dev. 
+			Algorithme de calcul de graph et affichage. 
+			Jenkins, confluance, jira, squish. 
+			Test unitaire, régression et intégration.</info>
+		<infoEN>Creating new feature, fixed bug, migration version of Qt 4-8-5 a 5-5. 
+			Api Server and client under qt. 
+			Documentation, compilation of libraries. 
+			Management of pdb and dump generation error. 
+			Ghost os windows and post installation. 
+			Support for new bug detection and correction. 
+			Network and choice of pc for dev. 
+			Graph calculation algorithm and display. 
+			Jenkins, confluence, jira, squish. 
+			Unit test, regression and integration.</infoEN>
+		<language>C++ Qt</language>
+		<tool>Jenkins QtCreator VisualStudio Windows Git</tool>
+	</job>
+	<job>
+		<description>Stage Développeur Web</description>
+		<descriptionEN>Traineeship Web developer</descriptionEN>
+		<date>10/2014 12/2014</date>
+		<entreprise>Pylarck</entreprise>
+		<info>html5, Css, PHP, Javascript, JQuery, Boostrap, Responsive Design</info>
+		<infoEN>html5, Css, PHP, Javascript, JQuery, Boostrap, Responsive Design</infoEN>
+		<language>Html Css Javascript Php Sql</language>
+		<tool>SublimText FileZilla PhpMyAdmin Windows Bootstrap MySql</tool>
+	</job>
+	<job>
+		<description>Stage Développeur Web</description>
+		<descriptionEN>Traineeship Web developer</descriptionEN>
+		<date>6/2014 8/2014</date>
+		<entreprise>Ton Appart</entreprise>
+		<info>html5, Css, PHP, Javascript, JQuery, Boostrap, Responsive Design</info>
+		<infoEN>html5, Css, PHP, Javascript, JQuery, Boostrap, Responsive Design</infoEN>
+		<language>Html Css Javascript Php Sql</language>
+		<tool>SublimText FileZilla PhpMyAdmin Windows Bootstrap MySql</tool>
+	</job>
+</work>

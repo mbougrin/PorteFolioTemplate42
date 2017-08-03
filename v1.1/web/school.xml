@@ -1,0 +1,26 @@
+<allschool>
+	<school>
+		<description>Architecte dans le développement numérique</description>
+		<descriptionEN>Architect in digital development</descriptionEN>
+		<date>2013/2016</date>
+		<name>42</name>
+		<country>Paris 17 (75)</country>
+		<website>http://www.42.fr</website>
+	</school>
+	<school>
+		<description>Administrateur Réseaux et Développement Web</description>
+		<descriptionEN>Network Administrator and Web Development</descriptionEN>
+		<date>2010</date>
+		<name>Hitéma</name>
+		<country>Issy-Les-Moulineaux (92)</country>
+		<website>http://www.hitema.fr</website>
+	</school>
+	<school>
+		<description>Maintenance Informatique</description>
+		<descriptionEN>Computer Maintenance</descriptionEN>
+		<date>2009</date>
+		<name>Médianet</name>
+		<country>Vitry Sur Seine (94)</country>
+		<website>http://www.medianet-formation.com</website>
+	</school>
+</allschool>
