@@ -4,6 +4,26 @@ Open Source Template Porte Folio (NodeJs and Js) Dynamics with data management i
 
 Use NodeJs Server And JavaScript in a front-end.
 
+# More Info
+
+XML INFO
+
+Project42 web page -> project42.xml
+
+Self-Educated/OpenSource -> opensource.xml
+
+Professional Experience -> xp.xml
+
+Education -> school.xml
+
+Skill -> parsing info tool and language for generating graph 
+
+AboutMe -> aboutme.xml
+
+Contact -> contact.xml
+
+Change Value into XML for creating web page html into JavaScript
+
 # V1
 
 Parsing XML file for generate a web site.
