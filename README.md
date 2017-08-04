@@ -4,7 +4,7 @@ Open Source Template Porte Folio (NodeJs and Js) Dynamics with data management i
 
 Use NodeJs Server And JavaScript in a front-end.
 
-#V1
+# V1
 
 Parsing XML file for generate a web site.
 
@@ -22,6 +22,10 @@ Create a link contact (github, linkedin, mail ...)
 
 Create a translate English/French
 
-#V1.1
+# V1.1
 
-Responsive Design in all Website and Donuts Chart Google
+Responsive Design in all Website and Donuts Chart Google responsive
+
+# V2
+
+Generation CV in a Js lib for export PDF and Word
