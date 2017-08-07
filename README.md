@@ -15,7 +15,6 @@ Self-Educated/OpenSource -> opensource.xml
 Professional Experience -> xp.xml
 
 Example xml xp.xml
-
 ```xml
 <work>
 	<job>
@@ -23,14 +22,13 @@ Example xml xp.xml
 		<descriptionEN>TextEnglish CDI Development C</descriptionEN>
 		<date>6/2017 Aujourd'hui</date>
 		<entreprise>Apside</entreprise>
-		<info>TextFrend</info>
+		<info>TextFrench</info>
 		<infoEN>TextEnglish</infoEN>
 		<language>C</language>
 		<tool>Vim Gcc Gdb Linux Svn</tool>
 	</job>
 </work>
 ```
-
 Education -> school.xml
 
 Skill -> parsing info tool and language for generating graph 
@@ -57,14 +55,14 @@ Create project page, OpenSource Page, Professional Experience Page, Education, A
 
 Create a link contact (github, linkedin, mail ...)
 
-	Create a translate English/French
+Create a translate English/French
 
 # V1.1
 
-	Responsive Design in all Website and Donuts Chart Google responsive
+Responsive Design in all Website and Donuts Chart Google responsive
 
-	Add 3d google chart for beautiful reading 
+Add 3d google chart for beautiful reading 
 
 # V2
 
-	Generation CV in a Js lib for export PDF and Word
+Generation CV in a Js lib for export PDF and Word
