@@ -1,4 +1,6 @@
-# PorteFolioTemplate42
+## PorteFolioTemplate42
+
+# Tested with google chrome 60.0.3112.90 (Build officiel) (64 bits)
 
 + http://www.mbougrin.fr
 
