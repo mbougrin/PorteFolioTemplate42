@@ -6,7 +6,7 @@
 <!-- By: mbougrin <mbougrin@student.42.fr>          +#+  +:+       +#+       -->
 <!--                                              +#+#+#+#+#+   +#+          -->
 <!-- Created: 2017/07/21 08:00:27 by mbougrin          #+#    #+#            -->
-<!-- Updated: 2017/08/04 04:01:03 by mbougrin         ###   ########.fr      -->
+<!-- Updated: 2017/08/07 07:14:52 by mbougrin         ###   ########.fr      -->
 <!--                                                                         -->
 <!-- *********************************************************************** -->
 
@@ -131,6 +131,16 @@
 
 		var ret = [];
 		var rettool = [];
+		function pdf()
+		{
+			document.getElementById('name_header').innerHTML = "Curriculum Vitae";
+
+			document.getElementById('main_div').innerHTML = '<p style="text-align: center;"><object id="cv" data="http://mozilla.github.io/pdf.js/web/viewer.html?file=http%3A%2F%2Finfluence-pc.fr%2Fenvois%2Fdocuments%2Fcv.pdf#zoom=page-fit" type="text/html">La visualisation n’est pas encore disponible sur votre navigateur, veillez à le mettre à jour.</object></p>';
+			pdfDocument = document.getElementById("cv");
+			pdfDocument.style.width = "710px";
+			pdfDocument.style.height = "742px";
+			alert("tu fait koi la xd");
+		}
 		function init_body()
 		{
 			init_skill();
@@ -278,7 +288,7 @@
 								"mailto:" + 
 								mainNode.getElementsByTagName('email42')[0].childNodes[0].nodeValue
 								+ '">' + "Contact Email42" + '</a>';
-				var pdf = '<a href="#" >CV Pdf</a>';
+				var pdf = '<a href="#" onclick="pdf()">CV Pdf</a>';
 				var style =		"style=font-size:16px;padding-right:15px;height:42px;";
 				document.getElementById('side_bar').innerHTML = 
 				"<li>" + github + "</li>" + 
@@ -534,6 +544,12 @@
 			google.charts.setOnLoadCallback(drawChart);
 			google.charts.setOnLoadCallback(drawChartTool);
 
+			//draw chart after resize web page
+			$(window).resize(function(){
+				drawChart();
+				drawChartTool();
+			});
+
 			function drawChart() {
 				var data = google.visualization.arrayToDataTable([
 						['Language', 'Number'],
@@ -545,6 +561,7 @@
 				var options = {
 					width: '100%',
 					height: '100%',
+					is3D: true,
 					chartArea: {left: "3%",top: "3%",height: "94%",width: "94%"},
 					title: 'Language',
 					pieHole: 0.3,
@@ -565,6 +582,7 @@
 				var options = {
 					width: '100%',
 					height: '100%',
+					is3D: true,
 					chartArea: {left: "3%",top: "3%",height: "94%",width: "94%"},
 					title: 'Tool/Library',
 					pieHole: 0.3,
@@ -908,6 +926,12 @@
 			google.charts.setOnLoadCallback(drawChart);
 			google.charts.setOnLoadCallback(drawChartTool);
 
+			//draw chart after resize web page
+			$(window).resize(function(){
+				drawChart();
+				drawChartTool();
+			});
+
 			function drawChart() {
 				var data = google.visualization.arrayToDataTable([
 						['Language', 'Number'],
@@ -918,6 +942,7 @@
 
 				var options = {
 					height: '100%',
+					is3D: true,
 					title: 'Language',
 					pieHole: 0.3,
 					backgroundColor: '#f5f5f5',
@@ -936,6 +961,7 @@
 
 				var options = {
 					height: '100%',
+					is3D: true,
 					title: 'Tool/Library',
 					pieHole: 0.3,
 					backgroundColor: '#f5f5f5',
@@ -1073,7 +1099,7 @@
 								"mailto:" + 
 								mainNode.getElementsByTagName('email42')[0].childNodes[0].nodeValue
 								+ '">' + "Contact Email42" + '</a>';
-				var pdf = '<a href="#" class="btn btn-default" ' + stylea + '>CV Pdf</a>';
+				var pdf = '<a href="#" class="btn btn-default" ' + stylea + ' onclick="pdf()">CV Pdf</a>';
 				var style =		"style=font-size:16px;padding-right:15px;height:42px;";
 				document.getElementById('main_div').innerHTML = 
 						"<table>" +
