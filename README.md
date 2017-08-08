@@ -67,6 +67,10 @@ Responsive Design in all Website and Donuts Chart Google responsive
 
 Add 3d google chart for beautiful reading 
 
+# V1.2
+
+Coding Server Secure ip and blacklist ip
+
 # V2
 
 Generation CV in a Js lib for export PDF and Word

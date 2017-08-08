@@ -1,0 +1,76 @@
+<allproject>
+	<project>
+		<name>Web Site</name>
+		<description>Creation porte folio en Full JS</description>
+		<descriptionEN>Portfolio creation in Full JS</descriptionEN>
+		<date>2017</date>
+		<language>Javascript NodeJS</language>
+		<tool>Vim Bootstrap</tool>
+	</project>
+	<project>
+		<name>Daemon Monitoring Open Source</name>
+		<description>Création server et monitoring d'une machine distante.</description>
+		<descriptionEN>Creation Server and monitoring a remote machine.</descriptionEN>
+		<date>2017</date>
+		<language>C</language>
+		<tool>Vim Gcc Gdb Linux</tool>
+	</project>
+	<project>
+		<name>Word Count</name>
+		<description>Calcule et parsing de bibliotheque de mot le plus optimiser possible.</description>
+		<descriptionEN>Word library parsing and calculation optimize as much as possible.</descriptionEN>
+		<date>2017</date>
+		<language>C</language>
+		<tool>Vim Gcc Gdb Linux</tool>
+	</project>
+	<project>
+		<name>Malloc Epitech</name>
+		<description>Refaire la fonction System malloc ainsi que free et realloc.
+		Avec la fonction sbrk pour linux.</description>
+		<descriptionEN>Repeat the system malloc function as well as free and realloc. With the sbrk function for linux.</descriptionEN>
+		<date>2017</date>
+		<language>C</language>
+		<tool>Vim Gcc Linux Unix Git</tool>
+	</project>
+	<project>
+		<name>LogAtWork</name>
+		<description>Compteur heure de travaille/pause Trier par An, trimestre, mois et semaine.
+			En C avec un affichage en NCurse.</description>
+		<descriptionEN>Counter Hours of work / pause Sort by Year, Quarter, Month and Week. In C with a display in NCurse.</descriptionEN>
+		<date>2016</date>
+		<language>C</language>
+		<tool>Vim Gcc Ncurse MacOsX Unix Git</tool>
+	</project>
+	<project>
+		<name>Ft_select Epitech</name>
+		<description>Liste Chaine Circulaire en NCurse.</description>
+		<descriptionEN>List Circular Chain in NCurse.</descriptionEN>
+		<date>2015</date>
+		<language>C</language>
+		<tool>Vim Gcc Linux Ncurse Git</tool>
+	</project>
+	<project>
+		<name>Mini Jeux En SDL2</name>
+		<description>Création d'un jeux en SDL2 pour apprendre à utiliser la SDL2</description>
+		<descriptionEN>Creating a SDL2 game to learn how to use the SDL2</descriptionEN>
+		<date>2014</date>
+		<language>C</language>
+		<tool>SDL2 Vim Gcc Gdb Linux Unix Git</tool>
+	</project>
+	<project>
+		<name>Minishell Epitech</name>
+		<description>Programmer un mini interpréteur de commandes UNIX.</description>
+		<descriptionEN>Program a UNIX shell.</descriptionEN>
+		<date>2014</date>
+		<language>C</language>
+		<tool>Vim Gcc Linux Unix Git</tool>
+	</project>
+	<project>
+		<name>Alum1 Epitech</name>
+		<description>Le jeux des allumette en C avec interface graphique en ncurses.</description>
+		<descriptionEN>The game of matches in C with graphical interface in ncurses.</descriptionEN>
+		<date>2014</date>
+		<language>C</language>
+		<tool>Vim Gcc Linux Algorithme Ncurse Git</tool>
+	</project>
+</allproject>
