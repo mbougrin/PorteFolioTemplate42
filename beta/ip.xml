@@ -6,6 +6,14 @@
   </ip>
   <ip>
 	<name>92.103.183.14</name>
+	<number>13</number>
+  </ip>
+  <ip>
+	<name>192.168.0.254</name>
 	<number>1</number>
+  </ip>
+  <ip>
+	<name>37.167.124.201</name>
+	<number>0</number>
   </ip>
 </allip>

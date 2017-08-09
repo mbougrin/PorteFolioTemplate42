@@ -6,7 +6,7 @@
 <!-- By: mbougrin <mbougrin@student.42.fr>          +#+  +:+       +#+       -->
 <!--                                              +#+#+#+#+#+   +#+          -->
 <!-- Created: 2017/07/21 08:00:27 by mbougrin          #+#    #+#            -->
-<!-- Updated: 2017/08/08 09:29:32 by mbougrin         ###   ########.fr      -->
+<!-- Updated: 2017/08/09 03:10:43 by mbougrin         ###   ########.fr      -->
 <!--                                                                         -->
 <!-- *********************************************************************** -->
 
@@ -34,6 +34,7 @@
 
 		<!-- Bootstrap core CSS -->
 		<link href="/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Google font CSS -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -124,6 +125,7 @@
 	  <!-- Placed at the end of the document so the pages load faster -->
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	  <script>
+		//All Variable Global
 		var oldpage = "homeid";
 		var langue = "fr";
 		var stylea = "style=width:130px;";
@@ -133,6 +135,14 @@
 
 		var ret = [];
 		var rettool = [];
+
+		/*
+		**	/brief 	Generate CV into PDF
+		**	/author mbougrin
+		**
+		**	/param	None
+		**	/return	None
+		*/
 		function pdf()
 		{
 			document.getElementById('name_header').innerHTML = "Curriculum Vitae";
@@ -143,6 +153,13 @@
 			pdfDocument.style.height = "742px";
 			alert("tu fait koi la xd");
 		}
+		/*
+		**	/brief 	Main Function Initialisation Web Site
+		**	/author mbougrin
+		**
+		**	/param	None
+		**	/return	None
+		*/
 		function init_body()
 		{
 			location.href = location.href + "ip";
@@ -151,6 +168,13 @@
 			print_sidebar();
 			home();
 		}
+		/*
+		**	/brief 	Initialisation Skill and Parsing into Array
+		**	/author mbougrin
+		**
+		**	/param	None
+		**	/return	None
+		*/
 		function init_skill()
 		{
 			const req = new XMLHttpRequest();
@@ -257,6 +281,13 @@
 			rettool.sort(compare);
 			ret.sort(compare);
 		}
+		/*
+		**	/brief 	Print SideBar With XML parsing link
+		**	/author mbougrin
+		**
+		**	/param	None
+		**	/return	None
+		*/
 		function print_sidebar()
 		{
 			const req = new XMLHttpRequest();
@@ -304,6 +335,13 @@
 				"<li>" + pdf + "</li>"; 
 			}
 		}
+		/*
+		**	/brief 	Function Traduction English/French
+		**	/author mbougrin
+		**
+		**	/param	None
+		**	/return	None
+		*/
 		function my_translate()
 		{
 			if (langue == "fr")
@@ -357,6 +395,13 @@
 			|| document.getElementById('name_header').innerHTML == "About Me")
 					aboutme();
 		}
+		/*
+		**	/brief 	Parsing Into Paragraph HTML
+		**	/author mbougrin
+		**
+		**	/param	None
+		**	/return	None
+		*/
 		function parseIntoParagraph(text)
 		{
 			var ret = "";
@@ -378,6 +423,13 @@
 			ret += "</p>";
 			return (ret)
 		}
+		/*
+		**	/brief 	Print Home Page In Web Site
+		**	/author mbougrin
+		**
+		**	/param	None
+		**	/return	None
+		*/
 		function home()
 		{
 			$('.navbar-collapse').collapse('hide');
@@ -602,6 +654,13 @@
 			document.getElementById('main_div').innerHTML = '<div>' +
 				formation + school + skill + tool + project42 + opensource + '</div>';
 		}
+		/*
+		**	/brief 	Print Project Page In Web Site
+		**	/author mbougrin
+		**
+		**	/param	None
+		**	/return	None
+		*/
 		function project()
 		{
 			$('.navbar-collapse').collapse('hide');
@@ -660,6 +719,13 @@
 				document.getElementById('main_div').innerHTML = ret; 
 			}
 		}	
+		/*
+		**	/brief 	Print OpenSource Page In Web Site
+		**	/author mbougrin
+		**
+		**	/param	None
+		**	/return	None
+		*/
 		function opensource()
 		{
 			$('.navbar-collapse').collapse('hide');
@@ -718,6 +784,13 @@
 				document.getElementById('main_div').innerHTML = ret; 
 			}
 		}
+		/*
+		**	/brief 	Print Work Page In Web Site
+		**	/author mbougrin
+		**
+		**	/param	None
+		**	/return	None
+		*/
 		function work()
 		{
 			$('.navbar-collapse').collapse('hide');
@@ -796,6 +869,13 @@
 				document.getElementById('main_div').innerHTML = ret; 
 			}
 		}
+		/*
+		**	/brief 	Print School Page In Web Site
+		**	/author mbougrin
+		**
+		**	/param	None
+		**	/return	None
+		*/
 		function school()
 		{
 			$('.navbar-collapse').collapse('hide');
@@ -853,6 +933,14 @@
 			}
 
 		}
+		/*
+		**	/brief 	Search Occurence Char and Return Index
+		**	/author mbougrin
+		**
+		**	/param	ret is a string to check
+		**	/param	find is string to search
+		**	/return	return index or error
+		*/
 		function search(ret, find)
 		{
 			for (var i = 0 ; ret[i] ; ++i)
@@ -862,6 +950,13 @@
 			}
 			return (-1);
 		}
+		/*
+		**	/brief 	Function for print a debug
+		**	/author mbougrin
+		**
+		**	/param	ret is a struct of information to print
+		**	/return	None
+		*/
 		function debug(ret)
 		{
 			for (var i = 0 ; ret[i] ; ++i)
@@ -869,6 +964,13 @@
 				console.log(ret[i].name + " " + ret[i].nb);
 			}
 		}
+		/*
+		**	/brief 	Print Skill Page In Web Site
+		**	/author mbougrin
+		**
+		**	/param	None
+		**	/return	None
+		*/
 		function skill()
 		{
 			$('.navbar-collapse').collapse('hide');
@@ -895,16 +997,37 @@
 			else if (sortSkill == "graph")
 				drawChartGoogle(ret, rettool, skill);	
 		}
+		/*
+		**	/brief 	Function for print skill into list
+		**	/author mbougrin
+		**
+		**	/param	None
+		**	/return	None
+		*/
 		function sortList()
 		{
 			sortSkill = "list";
 			skill();
 		}
+		/*
+		**	/brief 	Function for print skill into graph
+		**	/author mbougrin
+		**
+		**	/param	None
+		**	/return	None
+		*/
 		function sortGraph()
 		{
 			sortSkill = "graph";
 			skill();
 		}
+		/*
+		**	/brief 	Function for print a list into html
+		**	/author mbougrin
+		**
+		**	/param	None
+		**	/return	None
+		*/
 		function drawList(ret, rettool)
 		{
 			var divlanguage = '<div class="col-md-12" id="donutchart"><h3>Language</h3><table class="table-bordered">';
@@ -923,6 +1046,13 @@
 				'<div class="row">' + 
 				divlanguage + divtool + '</div>'; 
 		}
+		/*
+		**	/brief 	Function for print a graph GoogleChart into html
+		**	/author mbougrin
+		**
+		**	/param	None
+		**	/return	None
+		*/
 		function drawChartGoogle(ret, rettool, skill)
 		{
 		  	var divlanguage = '<div class="col-md-12"><div id="donutchart" style="height:442px;"></div></div>';
@@ -979,6 +1109,13 @@
 				'<div class="row" style="padding-bottom:42px;">' + 
 				divlanguage + divtool + '</div>'; 
 		}
+		/*
+		**	/brief 	Calculate a skill into a date
+		**	/author mbougrin
+		**
+		**	/param	SplitDate is a begin date and end date
+		**	/return	None
+		*/
 		function skillInDate(splitDate)
 		{
 			var skill;
@@ -1005,6 +1142,14 @@
 			skill += (endYear - beginYear) * 12;
 			return (skill);
 		}
+		/*
+		**	/brief 	Comparaison for a sort DESC
+		**	/author mbougrin
+		**
+		**	/param	a is a string compare
+		**	/param	b is a string compare
+		**	/return	None
+		*/
 		function compare(a,b) 
 		{
 			if (a.nb > b.nb)
@@ -1013,6 +1158,13 @@
 				return 1;
 			return 0;
 		}
+		/*
+		**	/brief 	Print tutorial page into a web site
+		**	/author mbougrin
+		**
+		**	/param	None
+		**	/return	None
+		*/
 		function tutorial()
 		{
 			$('.navbar-collapse').collapse('hide');
@@ -1028,6 +1180,13 @@
 				document.getElementById('name_header').innerHTML = "Tutorial"; 
 			document.getElementById('main_div').innerHTML = ""; 
 		}
+		/*
+		**	/brief 	Print aboutme page into a web site
+		**	/author mbougrin
+		**
+		**	/param	None
+		**	/return	None
+		*/
 		function aboutme()
 		{
 			$('.navbar-collapse').collapse('hide');
@@ -1060,6 +1219,13 @@
 			}
 			document.getElementById('main_div').innerHTML = parseIntoParagraph(text); 
 		}
+		/*
+		**	/brief 	Print contact page into a web site
+		**	/author mbougrin
+		**
+		**	/param	None
+		**	/return	None
+		*/
 		function contact()
 		{
 			$('.navbar-collapse').collapse('hide');
@@ -1118,6 +1284,13 @@
 						"</table>";
 			}
 		}
+		/*
+		**	/brief 	Function for Open url in a new tab
+		**	/author mbougrin
+		**
+		**	/param	url is a string with a url
+		**	/return	None
+		*/
 		function openInNewTab(url)
 		{
 			var win = window.open(url, '_blank');

@@ -1,19 +1,50 @@
+// ************************************************************************** //
+//                                                                            //
+//                                                        :::      ::::::::   //
+//   server.js                                          :+:      :+:    :+:   //
+//                                                    +:+ +:+         +:+     //
+//   By: mbougrin <mbougrin@student.42.fr>          +#+  +:+       +#+        //
+//                                                +#+#+#+#+#+   +#+           //
+//   Created: 2017/08/09 03:09:15 by mbougrin          #+#    #+#             //
+//   Updated: 2017/08/09 03:09:18 by mbougrin         ###   ########.fr       //
+//                                                                            //
+// ************************************************************************** //
+
 const express = require("express");
 const app = express();
 var fs = require('fs');
-//add static for use css
-app.use(express.static(__dirname));
 var path = require("path");
 
-// add css sendfile
+app.use(express.static(__dirname));
+
+/*
+**	/brief 	Function for a return index.html
+**	/author mbougrin
+**
+**	/param	None
+**	/return	None
+*/
 app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname, '/index.html'));
 });
-//add html sendfile
+/*
+**	/brief 	Function for a return dashboard.css
+**	/author mbougrin
+**
+**	/param	None
+**	/return	None
+*/
 app.get('/', function(req, res) {
   res.sendFile(__dirname + "/" + "dashboard.css");
 });
 
+/*
+**	/brief 	Function for a save IP client
+**	/author mbougrin
+**
+**	/param	None
+**	/return	None
+*/
 app.get('/ip', function(req, res) {
 	var ip = req.connection.remoteAddress;
 	var builder = require('xmlbuilder');
@@ -24,7 +55,7 @@ app.get('/ip', function(req, res) {
 		{
 			var retxml = builder.create('allip').ele('ip')
 							.ele('name').txt(ip)
-							.up().ele('number').txt('0').end({ pretty: true});
+							.up().ele('number').txt('1').end({ pretty: true});
 
 			fs.writeFile('ip.xml', retxml, function (err) {
 			  if (err) throw err;
