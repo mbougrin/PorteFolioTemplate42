@@ -1164,17 +1164,17 @@ function contact()
 			'<h3 style="margin-bottom: 25px; text-align: center;">Contact Form</h3>' +
 			'<div class="form-group">' + 
 			'<input type="text" class="form-control" id="name" name="name" placeholder="Name" required>' +
-			'</div><div class="form-group">' + 
-			'<input type="text" class="form-control" id="email" name="email" placeholder="Email" required>' + 						
-			'</div><div class="form-group">' + 
+			'</div><div id="name_id"></div><div class="form-group">' + 
+			'<input type="text" class="form-control form-control-warning" id="email" name="email" placeholder="Email" required>' + 						
+			'</div><div id="email_id"></div><div class="form-group">' + 
 			'<input type="text" class="form-control" id="mobile" name="mobile" placeholder="Mobile Number" required>' + 
-			'</div><div class="form-group">' + 
+			'</div><div id="mobile_id"></div><div class="form-group">' + 
 			'<input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>' +
-			'</div><div class="form-group">' + 
+			'</div><div id="subject_id"></div><div class="form-group">' + 
 			'<textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="140" rows="7"></textarea>' +
 			'<span class="help-block">' +
 			'<p id="characterLeft" class="help-block ">140 character limit</p>' +
-			'</span></div>' +
+			'</span></div><div id="message_id"></div>' +
 			'<button type="button" id="submit" name="submit" class="btn btn-primary pull-right" onclick="formSendMail()">Submit Form</button>' +
 			'</form></div></div>';
 		document.getElementById('main_div').innerHTML += form;
@@ -1189,16 +1189,63 @@ function contact()
  */
 function formSendMail()
 {
+	var check = true;
+	var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+	var reg_number = /^\d+$/;
 	var name = document.getElementById('name').value;
 	var email = document.getElementById('email').value;
 	var mobile = document.getElementById('mobile').value;
 	var subject = document.getElementById('subject').value;
 	var message = document.getElementById('message').value;
-	console.log("name " + name);
-	console.log("email " + email);
-	console.log("mobile " + mobile);
-	console.log("subject " + subject);
-	console.log("message " + message);
+	var name_warning = '<div class="alert alert-danger alert-dismissable" style="margin-top:5px;padding-top:5px;padding-bottom:5px;"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a><strong>Warning!</strong> Le Champs nom est vide.</div>';
+	var mail_warning = '<div class="alert alert-danger alert-dismissable" style="margin-top:5px;padding-top:5px;padding-bottom:5px;"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a><strong>Warning!</strong> Le champs email non valide.</div>';
+	var mobile_warning = '<div class="alert alert-danger alert-dismissable" style="margin-top:5px;padding-top:5px;padding-bottom:5px;"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a><strong>Warning!</strong> Le champs mobile non valide.</div>';
+	var subject_warning = '<div class="alert alert-danger alert-dismissable" style="margin-top:5px;padding-top:5px;padding-bottom:5px;"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a><strong>Warning!</strong> Le champs subject est vide.</div>';
+	var message_warning = '<div class="alert alert-danger alert-dismissable" style="margin-top:5px;padding-top:5px;padding-bottom:5px;"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a><strong>Warning!</strong> Le champs message est vide.</div>';
+	if (name.length == 0)
+	{
+		check = false;
+		document.getElementById('name_id').innerHTML = name_warning;
+	}
+	if (reg.test(email) == false)
+	{
+		check = false;
+		document.getElementById('email_id').innerHTML = mail_warning;
+	}
+	if (mobile.length != 10 || reg_number.test(mobile) == false)
+	{
+		check = false;
+		document.getElementById('mobile_id').innerHTML = mobile_warning;
+	}
+	if (subject.length == 0)
+	{
+		check = false;
+		document.getElementById('subject_id').innerHTML = subject_warning;
+	}
+	if (message.length == 0)
+	{
+		check = false;
+		document.getElementById('message_id').innerHTML = message_warning;
+	}
+	if (check == false)
+	{
+		setTimeout(function()
+				{
+					document.getElementById('name_id').innerHTML = "";
+					document.getElementById('email_id').innerHTML = "";
+					document.getElementById('mobile_id').innerHTML = "";
+					document.getElementById('subject_id').innerHTML = "";
+					document.getElementById('message_id').innerHTML = "";
+
+				}, 5000);
+		return ;
+	}
+	var link = "mailto:mbougrindev@gmail.com"
+		+ "?cc=mbougrin@student.42.fr"
+		+ "&subject=" + escape(subject)
+		+ "&body=" + escape("Name: " + name + "\nPhone: " + mobile + "\nEmail: " + email + "\n" + message)
+		;
+	window.location.href = link;
 }
 /*
  **	/brief 	Function for Open url in a new tab
