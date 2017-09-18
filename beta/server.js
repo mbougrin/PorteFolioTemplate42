@@ -6,7 +6,7 @@
 //   By: mbougrin <mbougrin@student.42.fr>          +#+  +:+       +#+        //
 //                                                +#+#+#+#+#+   +#+           //
 //   Created: 2017/08/09 03:09:15 by mbougrin          #+#    #+#             //
-//   Updated: 2017/08/09 03:09:18 by mbougrin         ###   ########.fr       //
+//   Updated: 2017/08/28 07:53:17 by mbougrin         ###   ########.fr       //
 //                                                                            //
 // ************************************************************************** //
 
@@ -97,7 +97,7 @@ app.get('/ip', function(req, res) {
 				newNodeName.appendChild(newText);
 
 				newNodeNumber = xml.createElement("number");
-				newText = xml.createTextNode("0");
+				newText = xml.createTextNode("1");
 				newNodeNumber.appendChild(newText);
 
 
