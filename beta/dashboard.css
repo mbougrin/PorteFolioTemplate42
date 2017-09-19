@@ -7,6 +7,14 @@ body {
   padding-top: 50px;
 }
 
+.panel-inverse {
+	border-color: #333;
+}
+.panel-inverse > .panel-heading {
+	color: #ffffff;
+	background-color: #333;
+	border-color: #333;
+}
 /*
  * Global add-ons
  */

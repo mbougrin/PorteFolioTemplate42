@@ -168,6 +168,23 @@ function init_skill()
 function print_sidebar()
 {
 	const req = new XMLHttpRequest();
+	req.open('GET', 'ip.xml', false);
+	req.overrideMimeType('text/xml');
+	req.send(null);
+	if (req.status === 200 && req.readyState === XMLHttpRequest.DONE)
+	{
+		var parser = new DOMParser();
+		xmlDoc = parser.parseFromString(req.responseText, "text/xml");
+
+		var mainNode = xmlDoc.getElementsByTagName('allip');
+		var nodeIp = xmlDoc.getElementsByTagName('ip');
+		var divCount = 	'<li style="padding-left:15px;padding-right:15px;">' +
+						'<div class="panel panel-inverse">' +
+			            '<div class="panel-heading">Compteur Visiteur</div>' +
+						'<div class="panel-body">' + nodeIp.length + " Visiteurs" +'</div></div></li>';
+		document.getElementById('side_bar').innerHTML = divCount; 
+	}
+
 	req.open('GET', 'contact.xml', false);
 	req.overrideMimeType('text/xml');
 	req.send(null);
@@ -202,7 +219,7 @@ function print_sidebar()
 			+ '">' + "Contact Email42" + '</a>';
 		var pdf = '<a href="#" onclick="pdf()">CV Pdf</a>';
 		var style =		"style=font-size:16px;padding-right:15px;height:42px;";
-		document.getElementById('side_bar').innerHTML = 
+		document.getElementById('side_bar').innerHTML += 
 			"<li>" + github + "</li>" + 
 			"<li>" + linkedin + "</li>" + 
 			"<li>" + viadeo + "</li>" + 
@@ -1207,37 +1224,47 @@ function formSendMail()
 		check = false;
 		document.getElementById('name_id').innerHTML = name_warning;
 	}
+	else
+		document.getElementById('name_id').innerHTML = "";
 	if (reg.test(email) == false)
 	{
 		check = false;
 		document.getElementById('email_id').innerHTML = mail_warning;
 	}
+	else
+		document.getElementById('email_id').innerHTML = "";
 	if (mobile.length != 10 || reg_number.test(mobile) == false)
 	{
 		check = false;
 		document.getElementById('mobile_id').innerHTML = mobile_warning;
 	}
+	else
+		document.getElementById('mobile_id').innerHTML = "";
 	if (subject.length == 0)
 	{
 		check = false;
 		document.getElementById('subject_id').innerHTML = subject_warning;
 	}
+	else
+		document.getElementById('subject_id').innerHTML = "";
 	if (message.length == 0)
 	{
 		check = false;
 		document.getElementById('message_id').innerHTML = message_warning;
 	}
+	else
+		document.getElementById('message_id').innerHTML = "";
 	if (check == false)
 	{
-		setTimeout(function()
-				{
-					document.getElementById('name_id').innerHTML = "";
-					document.getElementById('email_id').innerHTML = "";
-					document.getElementById('mobile_id').innerHTML = "";
-					document.getElementById('subject_id').innerHTML = "";
-					document.getElementById('message_id').innerHTML = "";
-
-				}, 5000);
+//		setTimeout(function()
+//				{
+//					document.getElementById('name_id').innerHTML = "";
+//					document.getElementById('email_id').innerHTML = "";
+//					document.getElementById('mobile_id').innerHTML = "";
+//					document.getElementById('subject_id').innerHTML = "";
+//					document.getElementById('message_id').innerHTML = "";
+//
+//				}, 5000);
 		return ;
 	}
 	var link = "mailto:mbougrindev@gmail.com"
